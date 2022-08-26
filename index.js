@@ -19,12 +19,12 @@ hexo.extend.filter.register('after_generate', function (locals) {
       layout_type: config.layout.type,
       layout_name: config.layout.name,
       layout_index: config.layout.index ? config.layout.index : 0,
-      loading: config.loading ? urlFor(config.loading) : "https://cdn.cbd.int/hexo-butterfly-clock-pro/lib/loading.gif",
-      clock_css: config.clock_css ? urlFor(config.clock_css) : "https://cdn.cbd.int/hexo-butterfly-clock-pro/lib/clock.min.css",
-      clock_js: config.clock_js ? urlFor(config.clock_js) : "https://cdn.cbd.int/hexo-butterfly-clock-pro/lib/clock.min.js",
+      loading: config.loading ? urlFor(config.loading) : "https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif",
+      clock_css: config.clock_css ? urlFor(config.clock_css) : "https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css",
+      clock_js: config.clock_js ? urlFor(config.clock_js) : "https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js",
       ip_api: config.ip_api ? urlFor(config.ip_api) : "https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0",
       qweather_key: config.qweather_key ? config.qweather_key : "b16a1fa0e63c46a4b8f28abfb06ae3fe",
-      gaud_map_key: config.gaud_map_key ? config.gaud_map_key : "e2b04289e870b005374ee030148d64fd",
+      gaud_map_key: config.gaud_map_key ? config.gaud_map_key : "e2b04289e870b005374ee030148d64fd&s=rsv3",
     }
   // 渲染页面
   const temple_html_text = config.temple_html ? config.temple_html : pug.renderFile(path.join(__dirname, './lib/html.pug'),data)
