@@ -1,6 +1,6 @@
 # hexo-butterfly-clock
 
-给`hexo-theme-butterfly`添加 [侧边栏电子钟](https://akilar.top/posts/4e39cf4a/)
+给`hexo-theme-butterfly`添加 [侧边栏电子钟](https://anzhiy.cn/posts/fc18.html)
 
 # 安装
 
@@ -62,7 +62,7 @@
     ![Web服务](https://image.anzhiy.cn/adminuploads/1/2022/08/26/6308a11023c69.webp)
     4. 复制key
     ![复制key](https://image.anzhiy.cn/adminuploads/1/2022/08/26/6308a11018a74.webp)
-    
+
 4. 参数释义
 
   |参数|备选值/类型|释义|
