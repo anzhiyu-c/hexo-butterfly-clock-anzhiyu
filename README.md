@@ -13,13 +13,13 @@
 2. 安装插件,在博客根目录`[Blogroot]`下打开终端，运行以下指令：
 
    ```bash
-   npm install hexo-butterfly-clock-pro --save
+    npm install hexo-butterfly-clock-anzhiyu --save
    ```
 
 3. 添加配置信息，以下为写法示例
-  在站点配置文件`_config.yml`或者主题配置文件`_config.butterfly.yml`中添加
+   在站点配置文件`_config.yml`或者主题配置文件`_config.butterfly.yml`中添加
 
-  ```yml
+   ```yml
     # electric_clock
     # see https://anzhiy.cn/posts/fc18.html
     electric_clock:
@@ -33,11 +33,36 @@
         type: class
         name: sticky_layout
         index: 0
-      loading: https://cdn.cbd.int/hexo-butterfly-clock-pro/lib/loading.gif #加载动画自定义
-      clock_css: https://cdn.cbd.int/hexo-butterfly-clock-pro/lib/clock.min.css
-      clock_js: https://cdn.cbd.int/hexo-butterfly-clock-pro/lib/clock.min.js
+      loading: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif #加载动画自定义
+      clock_css: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css
+      clock_js: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js
       ip_api: https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0
-  ```
+      qweather_key:  # 和风天气key
+      gaud_map_key:  # 高得地图web服务key
+   ```
+
+   其中`qweather_key`和`gaud_map_key`最好自己去申请对应的api key，默认使用我自己的，可能会被限制，不保证可靠性
+
+    `qweather_key`申请地址: https://id.qweather.com/#/login
+    1. 登录后进入控制台
+    ![和风天气控制台](https://image.anzhiy.cn/adminuploads/1/2022/08/26/63089a777772f.webp)
+    2. 创建应用
+    ![创建和风天气应用](https://image.anzhiy.cn/adminuploads/1/2022/08/26/63089a7772a30.webp)
+    3. 填写应用名称和key名称随意
+    4. 选择WebApi
+    ![选择WebApi](https://image.anzhiy.cn/adminuploads/1/2022/08/26/63089a776a3fd.webp)
+    5. 复制key
+    ![复制key](https://image.anzhiy.cn/adminuploads/1/2022/08/26/63089b848e8a7.webp)
+
+    `gaud_map_key` 申请地址: https://lbs.amap.com/
+    1. 登录后进入控制台
+    2. 创建应用，名称随意，类型选其他
+    ![创建应用](https://image.anzhiy.cn/adminuploads/1/2022/08/26/6308a1101d83c.webp)
+    3. 点击添加, `key`名称随意，`服务平台`选择`Web服务`,点击提交
+    ![Web服务](https://image.anzhiy.cn/adminuploads/1/2022/08/26/6308a11023c69.webp)
+    4. 复制key
+    ![复制key](https://image.anzhiy.cn/adminuploads/1/2022/08/26/6308a11018a74.webp)
+    
 4. 参数释义
 
   |参数|备选值/类型|释义|
@@ -53,5 +78,7 @@
   |clock_css|URL|【可选】电子钟样式CDN资源|
   |clock_js|URL|【可选】电子钟执行脚本CDN资源|
   |ip_api|URL|【可选】获取时钟IP的API|
+  |qweather_key|【可选】和风天气key|
+  |gaud_map_key|【可选】高得地图web服务key|
 # 截图
 ![](https://image.anzhiy.cn/adminuploads/1/2022/08/26/630888b65adc7.png)
