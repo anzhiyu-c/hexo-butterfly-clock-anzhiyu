@@ -1,6 +1,6 @@
 'use strict'
 // 全局声明插件代号
-const pluginname = 'butterfly_clock_pro'
+const pluginname = 'butterfly_clock_anzhiyu'
 // 全局声明依赖
 const pug = require('pug')
 const path = require('path')
