@@ -1,6 +1,6 @@
 {
   "name": "hexo-butterfly-clock-anzhiyu",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A clock card plugin for theme-butterfly",
   "main": "index.js",
   "scripts": {
