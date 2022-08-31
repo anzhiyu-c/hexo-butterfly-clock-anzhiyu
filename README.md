@@ -20,25 +20,27 @@
    在站点配置文件`_config.yml`或者主题配置文件`_config.butterfly.yml`中添加
 
    ```yml
-    # electric_clock
-    # see https://anzhiy.cn/posts/fc18.html
-    electric_clock:
-      enable: true # 开关
-      priority: 5 #过滤器优先权
-      enable_page: all # 应用页面
-      exclude:
-        # - /posts/
-        # - /about/
-      layout: # 挂载容器类型
-        type: class
-        name: sticky_layout
-        index: 0
-      loading: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif #加载动画自定义
-      clock_css: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css
-      clock_js: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js
-      ip_api: https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0
-      qweather_key:  # 和风天气key
-      gaud_map_key:  # 高得地图web服务key
+      # electric_clock
+      # see https://anzhiy.cn/posts/fc18.html
+      electric_clock:
+        enable: true # 开关
+        priority: 5 #过滤器优先权
+        enable_page: all # 应用页面
+        exclude:
+          # - /posts/
+          # - /about/
+        layout: # 挂载容器类型
+          type: class
+          name: sticky_layout
+          index: 0
+        loading: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu@1.0.8/lib/loading.gif #加载动画自定义
+        clock_css: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu@1.0.8/lib/clock.min.css
+        clock_js: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu@1.0.8/lib/clock.js
+        ip_api: https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0
+        qweather_key:  # 和风天气key
+        gaud_map_key:  # 高得地图web服务key
+        default_rectangle: false # 开启后将一直显示rectangle位置的天气，否则将获取访问者的地理位置与天气
+        rectangle: 112.6534116,27.96920845 # 获取访问者位置失败时会显示该位置的天气，同时该位置为开启default_rectangle后的位置
    ```
 
    其中`qweather_key`和`gaud_map_key`最好自己去申请对应的api key，默认使用我自己的，可能会被限制，不保证可靠性
@@ -80,5 +82,7 @@
   |ip_api|URL|【可选】获取时钟IP的API|
   |qweather_key|【可选】和风天气key|
   |gaud_map_key|【可选】高得地图web服务key|
+  |default_rectangle|【可选】和风天气key|
+  |rectangle|【可选】高得地图web服务key|
 # 截图
 ![](https://image.anzhiy.cn/adminuploads/1/2022/08/26/630888b65adc7.png)
