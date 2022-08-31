@@ -65,7 +65,16 @@ span.temp {
 [data-theme='dark'] .clock-row {
   color: #fff;
 }
-
+@media screen and (min-width: 900px){
+  .card-clock-humidity {
+     display: block;
+  }
+}
+@media screen and (max-width: 1086px){
+  .card-clock-humidity {
+    display: none;
+  }
+}
 /*!
 * QWeather Icons (https://icons.qweather.com)
 * Copyright QWeather 和风天气 (https://www.qweather.com)
