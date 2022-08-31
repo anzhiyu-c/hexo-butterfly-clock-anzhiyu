@@ -33,9 +33,9 @@
           type: class
           name: sticky_layout
           index: 0
-        loading: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu@1.0.8/lib/loading.gif #加载动画自定义
-        clock_css: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu@1.0.8/lib/clock.min.css
-        clock_js: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu@1.0.8/lib/clock.js
+        loading: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu@1.0.9/lib/loading.gif #加载动画自定义
+        clock_css: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu@1.0.9/lib/clock.min.css
+        clock_js: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu@1.0.9/lib/clock.js
         ip_api: https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0
         qweather_key:  # 和风天气key
         gaud_map_key:  # 高得地图web服务key
