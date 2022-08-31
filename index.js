@@ -34,7 +34,7 @@ hexo.extend.filter.register('after_generate', function (locals) {
     //样式资源
   const css_text = `<link rel="stylesheet" href="${data.clock_css}" />`
     //脚本资源
-  const js_text = `<script src="${data.ip_api}"></script><script data-pjax src="${data.clock_js}"></script><script src="http://whois.pconline.com.cn/ipAreaCoordJson.jsp?callback=IPCallBack&coords=${data.rectangle}&level=3"></script>`
+  const js_text = `<script src="${data.ip_api}"></script><script data-pjax src="${data.clock_js}"></script><script src="http://whois.pconline.com.cn/ipAreaCoordJson.jsp?callback=getIpInfo&coords=${data.rectangle}&level=3"></script>`
   //注入容器声明
   var get_layout
   //若指定为class类型的容器
